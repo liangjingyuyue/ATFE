@@ -1,0 +1,16 @@
+test_10crop.py
+    line:24 gt = np.load('list/gt-sh.npy')
+
+dataset.py
+    lint:17 self.rgb_list_file = 'list/shanghai-i3d-test-10crop_1.list' or self.rgb_list_file = 'list/shanghai-i3d-test-10crop.list'
+    line:19 self.rgb_list_file = 'list/shanghai-i3d-train-10crop_1.list' or self.rgb_list_file = 'list/shanghai-i3d-train-10crop.list'
+    line:62
+
+model2.py
+    line 14:更改各Conv维度
+
+option
+    line:5
+    parser.add_argument('--batch-size', type=int, default=16 / 2, help='number of instances in a batch of data (default: 16)')
+
+
